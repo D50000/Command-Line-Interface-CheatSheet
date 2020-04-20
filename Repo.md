@@ -1,0 +1,1 @@
+https://source.android.google.cn/setup/develop/repo

@@ -1,7 +1,7 @@
 # Command Line Interface CheatSheet
-Useful and common command notes for everyons.
+Useful and common command notes for everyones.
 Include:
 - Linux
-- SQL
 - Git
 - Repo
+- SQL
