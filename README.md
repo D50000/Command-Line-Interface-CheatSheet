@@ -1,6 +1,6 @@
 # Command Line Interface CheatSheet
 
-Useful and common command notes for everyones.
+Useful and common command notes for everyones.  
 Include:
 
 - [Linux](https://github.com/D50000/Command-Line-Interface-CheatSheet/blob/master/Linux.md)

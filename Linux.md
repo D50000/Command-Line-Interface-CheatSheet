@@ -1,11 +1,19 @@
 # ==================   Linux   ==================  
-
+Detail:  
 http://linux.vbird.org/linux_basic/
 
 ## System Service
 - Check CentOs version
 ```shell
 cat /etc/centos-release
+```
+- List all processes
+```shell
+ps -a
+```
+- Kill the process by PID
+```shell
+kill 123
 ```
 - List all the services
 ```shell
@@ -31,6 +39,7 @@ free -h
 ```shell
 netstat -at
 ```
+
 ## Permission
 - change owner
 ```shell
@@ -42,6 +51,10 @@ chmod 755 testfile.txt
 ```
 
 ## General Command
+- Copy the file to other VM
+```shell
+scp /path/file1 user@192.168.0.1:/path/file2
+```
 - Find file name
 ```shell
 find /etc -iname 'KEYWORD'
@@ -54,6 +67,7 @@ tail -f fileName
 ```shell
 tail -100f testfileName
 ```
+
 ## VI & VIM
 - Highlight and choose the line
 ```shell
@@ -82,6 +96,11 @@ tail -100f testfileName
 # **n** for next match, **N** for previous.
 <normal mode> /keyword
 ```
+- Search the keyword and save it
+```shell
+grep "1111" /tmp/catalina.out.2018-08-20 > 123321.log
+```
+
 ## Compression
 - tar / untar
 ```shell
