@@ -3,6 +3,8 @@ Detail:
 http://linux.vbird.org/linux_basic/
 
 ## System Service
+<details>
+<summary>view subjects</summary>
 - Check CentOs version
 ```shell
 cat /etc/centos-release
@@ -39,8 +41,11 @@ free -h
 ```shell
 netstat -at
 ```
+</details>
 
 ## Permission
+<details>
+<summary>view subjects</summary>
 - change owner
 ```shell
 chown root:root /var/log/imm
@@ -49,8 +54,11 @@ chown root:root /var/log/imm
 ```shell
 chmod 755 testfile.txt
 ```
+</details>
 
 ## General Command
+<details>
+<summary>view subjects</summary>
 - Copy the file to other VM
 ```shell
 scp /path/file1 user@192.168.0.1:/path/file2
@@ -67,8 +75,11 @@ tail -f fileName
 ```shell
 tail -100f testfileName
 ```
+</details>
 
 ## VI & VIM
+<details>
+<summary>view subjects</summary>
 - Highlight and choose the line
 ```shell
 # V for choose all line, v for single word.
@@ -100,8 +111,11 @@ tail -100f testfileName
 ```shell
 grep "1111" /tmp/catalina.out.2018-08-20 > 123321.log
 ```
+</details>
 
 ## Compression
+<details>
+<summary>view subjects</summary>
 - tar / untar
 ```shell
 tar cvf FileName.tar DirName
@@ -117,3 +131,4 @@ gunzip FileName.gz
 rar a FileName.rar DirName
 rar e FileName.rar
 ```
+</details>
