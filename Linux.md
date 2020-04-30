@@ -6,6 +6,10 @@ http://linux.vbird.org/linux_basic/
 <details>
 <summary>view subjects</summary>
 
+- Reboot the VM
+```shell
+sudo reboot
+```
 - Check CentOs version
 ```shell
 cat /etc/centos-release
@@ -50,7 +54,7 @@ netstat -at
 
 - change owner
 ```shell
-chown root:root /var/log/imm
+chown root:root /var/log/file
 ```
 - change file permission
 ```shell

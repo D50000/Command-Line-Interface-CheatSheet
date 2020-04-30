@@ -1,18 +1,78 @@
-==================  git bash  ==================
+# ==================  git bash  ==================  
+Detail:  
 https://website-proxy.backlogtool.com/git-tutorial/tw/reference/
 
->> Customized script in ~/.git/config:
-[alias]
-	review = push origin HEAD:refs/for/master
-	amend = commit -a --amend
+- Clone the source
+```
+git clone <url>
+```
 
->> For revert last commit
-$git reset HEAD^
+- Pull the source down and replace the local source **(pull = fetch + merge)**
+```
+git pull <repository> <refspec>
+```
 
->> For updating source code:
-$git pull --rebase
+- Simple load the remote source down
+```
+git fetch <repository> <refspec>
+```
 
->> For save, show, load the current step:
-$git stash save
-$git stash list
-$git stash pop
+- Merge <branch> to <master>
+```
+git merge <branch>
+```
+
+- Update the local code and rebase the comparing point to the latest version
+```
+git pull --rebase
+```
+
+- Check and compare the local / remote source
+```
+git status
+```
+
+- Add code to **staged** prepare for commit
+```
+git add file_path
+```
+
+- git commit the change
+```
+git commit
+```
+
+- Fix the previous commit comment
+```
+git commit --amend
+```
+
+- Check the commit log
+```
+git log
+```
+
+- Push the commit to remote
+```
+git push <repository> <refspec>
+```
+
+- Revert all change back to last commit
+```
+git reset HEAD^
+```
+
+- Save current status
+```
+git stash save
+```
+
+- List the current **stash** data
+```
+git stash list
+```
+
+- Restore the **stash**
+```
+git stash pop
+```
