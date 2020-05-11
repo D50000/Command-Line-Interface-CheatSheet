@@ -1,4 +1,4 @@
-# ==================  git bash  ==================  
+# ===============  git bash  ===============  
 Detail:  
 https://website-proxy.backlogtool.com/git-tutorial/tw/reference/
 

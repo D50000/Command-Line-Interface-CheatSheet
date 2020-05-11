@@ -82,6 +82,10 @@ tail -f fileName
 ```shell
 tail -100f testfileName
 ```
+-  Replace the X to Y in test_file (space need to escape ```'\ '```)
+```shell
+sed -i 's/XXX/YY\ YY/g' testfilename.txt
+```
 </details>
 
 ## VI & VIM
