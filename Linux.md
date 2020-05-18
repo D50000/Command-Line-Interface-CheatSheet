@@ -18,6 +18,23 @@ cat /etc/centos-release
 ```shell
 ps -a
 ```
+- Run the process in background / foreground
+```shell
+# 'Ctrl + z' to stop it first and get the number
+# Run at background
+bg %1
+# Run at foreground
+fg %1
+```
+- Keep the session alive to run the job when disconnect
+```shell
+# Need to install the dependency first
+yum install screen
+# Use 'screen'
+screen
+# Keep it alive
+# "Ctrl + a" + "d"
+```
 - Kill the process by PID
 ```shell
 kill 123
