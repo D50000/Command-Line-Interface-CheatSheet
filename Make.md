@@ -4,7 +4,7 @@ https://makefiletutorial.com/
 
 - Print in makefile
 ```make
-TEST = Amtrak
+TEST = test
 target:
     echo "This line will always print"
     echo Print out test: $(TEST)
@@ -44,6 +44,15 @@ Name ?= %{nil}
 
 # "pattern-specific" will assign `CFLAGS` the value of `-O' for all targets matching the pattern `%.o`.
 %.o : CFLAGS = -O
+```
+
+- Passing variable from shell command
+```make
+# make foo=test all
+foo ?= TEST
+
+all:
+	echo 'BUILD_NUMBER= $(foo)'
 ```
 
 - Passing user defined parameters in rpmbuild to fill variables
