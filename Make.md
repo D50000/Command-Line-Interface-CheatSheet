@@ -31,6 +31,27 @@ all:
     echo `pwd`
 ```
 
+- Declare variable
+```make
+# Normal declaring
+V = $(VERSION)
+
+# "Override Directive" to append more text
+variable := value
+
+# No input will "Empty" default
+Name ?= %{nil}
+
+# "pattern-specific" will assign `CFLAGS` the value of `-O' for all targets matching the pattern `%.o`.
+%.o : CFLAGS = -O
+```
+
+- Passing user defined parameters in rpmbuild to fill variables
+```make
+# And refer it within the spec as %{_foobar} , the _ is a convention, not a must
+rpmbuild -bb --define '_foobar Foo' somespecfile.spec
+```
+
 - Conditional if/else
 ```make
 foo = KO
