@@ -46,13 +46,13 @@ Name ?= %{nil}
 %.o : CFLAGS = -O
 ```
 
-- Passing variable from shell command
+- Passing variable from shell command **make foo=test all**
 ```make
 # make foo=test all
 foo ?= TEST
 
 all:
-	echo 'BUILD_NUMBER= $(foo)'
+    echo 'BUILD_NUMBER= $(foo)'
 ```
 
 - Passing user defined parameters in rpmbuild to fill variables
