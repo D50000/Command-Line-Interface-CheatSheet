@@ -16,10 +16,12 @@ cat /etc/centos-release
 ```
 - Set up **cron job**
 ```shell
-crontable -e
+crontab -e
 # Edit the file
 # At 00:05 in August will run the test.py job
 5 0 * 8 * /use/bin/python3 /home/test.py
+# Check the crontable jobs.
+crontab -l
 ```
 - List all processes
 ```shell
