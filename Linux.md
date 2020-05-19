@@ -14,6 +14,13 @@ sudo reboot
 ```shell
 cat /etc/centos-release
 ```
+- Set up **cron job**
+```shell
+crontable -e
+# Edit the file
+# At 00:05 in August will run the test.py job
+5 0 * 8 * /use/bin/python3 /home/test.py
+```
 - List all processes
 ```shell
 ps -a
