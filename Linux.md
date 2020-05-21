@@ -106,7 +106,11 @@ tail -f fileName
 ```
 -  Show the last 100 lines.
 ```shell
-tail -100f testfileName
+tail -100 testfileName
+```
+-  Show the first 50 lines.
+```shell
+head -50 testfileName
 ```
 -  Replace the X to Y in test_file (space need to escape ```'\ '```)
 ```shell
