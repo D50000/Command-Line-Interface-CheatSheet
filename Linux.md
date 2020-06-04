@@ -64,6 +64,10 @@ history
 ```shell
 top
 ```
+- Check the disk volume the usage
+```shell
+df -h
+```
 - Check the memory usage
 ```shell
 free -h
