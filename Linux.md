@@ -68,6 +68,10 @@ top
 ```shell
 df -h
 ```
+- Check the file size
+```shell
+du -h /tmp.log
+```
 - Check the memory usage
 ```shell
 free -h
