@@ -172,6 +172,11 @@ grep "1111" /tmp/catalina.out.2018-08-20 > 123321.log
 tar cvf FileName.tar DirName
 tar xvf FileName.tar
 ```
+- zip / unzip
+```shell
+zip -r file.zip directory_name
+unzip file.zip
+```
 - gzip / gunzip
 ```shell
 gzip FileName
