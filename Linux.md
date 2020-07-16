@@ -68,6 +68,10 @@ top
 ```shell
 df -h
 ```
+- Check the file size
+```shell
+du -h /tmp.log
+```
 - Check the memory usage
 ```shell
 free -h
@@ -167,6 +171,11 @@ grep "1111" /tmp/catalina.out.2018-08-20 > 123321.log
 ```shell
 tar cvf FileName.tar DirName
 tar xvf FileName.tar
+```
+- zip / unzip
+```shell
+zip -r file.zip directory_name
+unzip file.zip
 ```
 - gzip / gunzip
 ```shell
