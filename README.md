@@ -7,4 +7,4 @@ Include:
 - [Git](https://github.com/D50000/Command-Line-Interface-CheatSheet/blob/master/Git.md)
 - [Make](https://github.com/D50000/Command-Line-Interface-CheatSheet/blob/master/Make.md)
 - [Repo](https://github.com/D50000/Command-Line-Interface-CheatSheet/blob/master/Repo.md)
-- SQL
+- [SQL](https://github.com/D50000/Command-Line-Interface-CheatSheet/blob/master/SQL.md)
