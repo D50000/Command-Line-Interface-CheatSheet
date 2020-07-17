@@ -1,4 +1,4 @@
-==================  Mysql  ==================
+# ==================  Mysql  ==================
 Detail:  
 https://www.w3schools.com/sql/
 
@@ -32,11 +32,11 @@ describe [tabeName];
 exit
 ```
 
-==================   PostgreSQL   ==================
+# ==================   PostgreSQL   ==================
 https://www.postgresqltutorial.com/
 
 - Version check
 $postgres --version
 
 
-==================   Oracle Database   ==================
+# ==================   Oracle Database   ==================
