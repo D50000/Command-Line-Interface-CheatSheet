@@ -48,6 +48,27 @@ mysql -u root -p [kms] < [file.sql]
 exit
 ```
 
+- Creates an **index** on a table. (Duplicate values are allowed)
+```
+create index [index_name] on [table_name] (column1, column2, ...);
+```
+
+- Creates a **PRIMARY KEY** on the "ID" column when the "Persons" table is created
+```
+CREATE TABLE [tablename] (
+  ID int NOT NULL,
+  [AAA] varchar(255) NOT NULL,
+  [BBB] varchar(255),
+  [CCC] int,
+  PRIMARY KEY (ID)
+);
+```
+
+- Diagnose the query process.
+```
+explain select [column1] from [tablename];
+```
+
 # ===============   PostgreSQL   ===============
 https://www.postgresqltutorial.com/
 
