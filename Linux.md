@@ -102,7 +102,7 @@ chmod 755 testfile.txt
 
 - Copy the file to other VM
 ```shell
-scp /path/file1 user@192.168.0.1:/path/file2
+scp /path/file1 user@192.168.0.1:/path/
 ```
 - Find file name
 ```shell
