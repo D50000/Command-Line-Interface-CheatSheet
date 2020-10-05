@@ -120,7 +120,7 @@ tail -100 testfileName
 ```shell
 head -50 testfileName
 ```
--  Replace the X to Y in test_file (space need to escape ```'\ '```)
+-  Replace the X to Y in testfilename.txt (space need to escape ```'\ '```)
 ```shell
 sed -i 's/XXX/YY\ YY/g' testfilename.txt
 ```
