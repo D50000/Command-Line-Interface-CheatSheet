@@ -1,6 +1,6 @@
 # ===============  git bash  ===============  
 Detail:  
-https://website-proxy.backlogtool.com/git-tutorial/tw/reference/
+https://git-scm.com/docs
 
 - Clone the source
 ```
@@ -30,6 +30,11 @@ git pull --rebase
 - Check and compare the local / remote source
 ```
 git status
+```
+
+- Remove untracked files from the working tree. (ex: -dfx = directory, file, .gitignore config)
+```
+git clean -dfx
 ```
 
 - Add code to **staged** prepare for commit
