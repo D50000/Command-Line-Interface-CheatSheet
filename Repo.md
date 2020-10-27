@@ -17,3 +17,18 @@ repo sync [project-list] -j1
 ```
 repo start -all [branch-name] [project-list]
 ```
+
+- Compares the working tree to the staging area (index) and the most recent commit on this branch (HEAD) in each project specified.
+```
+repo status [project-list]
+```
+
+- Downloads the specified change from the review system and makes it available in your project's local working directory.
+```
+repo download [target revision]
+```
+
+- Executes the given shell command for all repo project. (ex: repo forall -c git reset --hard HEAD)
+```
+repo forall [project-list] -c [command]
+```
