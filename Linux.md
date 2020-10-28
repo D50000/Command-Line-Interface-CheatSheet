@@ -151,6 +151,10 @@ sed -i 's/XXX/YY\ YY/g' testfilename.txt
 ```shell
 <normal mode> u
 ```
+- Show code line.
+```shell
+<normal mode> :set number
+```
 - Search keyword
 ```shell
 # **/** for search frontward, **?** for search backward.
