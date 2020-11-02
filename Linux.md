@@ -10,9 +10,10 @@ http://linux.vbird.org/linux_basic/
 ```shell
 sudo reboot
 ```
-- Check CentOs version
+- Check CentOs/redhat version
 ```shell
 cat /etc/centos-release
+cat /etc/redhat-release 
 ```
 - Set up **cron job**
 ```shell
