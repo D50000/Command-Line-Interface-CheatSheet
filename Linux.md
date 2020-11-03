@@ -83,6 +83,21 @@ netstat -at
 ```
 </details>
 
+## Package Commands
+<details>
+<summary>view subjects</summary>
+
+- Download the package to the directory without install it.
+```shell
+sudo yum install --downloadonly --downloaddir=/root/xxx <package_Name>
+```
+
+- Directly crawl the data back and save the response.
+```shell
+curl http://www.google.com > response.html
+```
+</details>
+
 ## Permission
 <details>
 <summary>view subjects</summary>
