@@ -2,6 +2,11 @@
 Detail:  
 https://makefiletutorial.com/
 
+- Reset the file and cache.
+```make
+make clean
+```
+
 - Print in makefile
 ```make
 TEST = test
@@ -68,5 +73,14 @@ ifeq ($(foo), KO)
     echo "foo equals KO"
 else
     echo "NO"
+endif
+```
+
+- Conditional ifdef/else (ifdef negative ifndef)
+```make
+ifdef foo
+    frobozz = yes
+else
+    frobozz = no
 endif
 ```
