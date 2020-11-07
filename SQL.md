@@ -32,6 +32,16 @@ show tables;
 describe [tabeName];
 ```
 
+- Select the data from table.
+```
+SELECT [columnA], [columnB] FROM [tabeName];
+```
+
+- Update the table data.
+```
+UPDATE [tabeName] SET [columnA]='123' WHERE [columnB]='ABC';
+```
+
 - Drop database.
 ```
 drop database [DatabaseName];
