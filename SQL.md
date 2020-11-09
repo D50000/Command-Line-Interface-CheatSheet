@@ -50,7 +50,7 @@ drop database [DatabaseName];
 - Export / Import DB
 ```
 mysqldump -u root -p –databases [DBname] > [backupfile.sql]
-mysql -u root -p [kms] < [file.sql]
+mysql -u root -p [DBname] < [backupfile.sql]
 ```
 
 - Logout the mysql.
