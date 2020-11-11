@@ -14,7 +14,7 @@ create database [DBname];
 
 - Show all the databases.
 ```
-SHOW DATABASES;
+show databases;
 ```
 
 - Select a DB and enter in.
@@ -82,8 +82,42 @@ explain select [column1] from [tablename];
 # ===============   PostgreSQL   ===============
 https://www.postgresqltutorial.com/
 
-- Version check
-$postgres --version
+- Version check.
+```
+postgres --version
+```
 
+- Initiate the database.
+```
+service [postgresql-version] initdb
+```
+
+- Login postgres.
+```
+sudo -u [username] psql
+```
+
+- End of postgresql command.
+```
+Ctrl + D
+```
+
+- Shows all databases
+```
+\l
+\l+   # for more information
+```
+
+- Select a DB and enter in.
+```
+\c [database_name]
+```
+
+- Shows all "relations/tables/sequence" schema.
+```
+\d
+\dt
+\dS
+```
 
 # ===============   Oracle Database   ===============
