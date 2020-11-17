@@ -140,6 +140,11 @@ head -50 testfileName
 ```shell
 sed -i 's/XXX/YY\ YY/g' testfilename.txt
 ```
+-  Read and parse the file and do the custom command.
+```shell
+# Split by ':' and print variables "$1 tab $7"
+cat /etc/passwd | awk -F ':' '{print $1"\t"$7}'
+```
 </details>
 
 ## VI & VIM
