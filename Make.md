@@ -36,6 +36,11 @@ all:
     echo `pwd`
 ```
 
+- Modify the file attribute.
+```make
+$(patsubst %.c, %.o, $(dir) )
+```
+
 - Declare variable
 ```make
 # Normal declaring
