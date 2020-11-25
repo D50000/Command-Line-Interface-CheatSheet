@@ -15,6 +15,13 @@ sudo reboot
 cat /etc/centos-release
 cat /etc/redhat-release 
 ```
+- Check Linux  by 'uname' command.
+```shell
+# List all info.
+uname -a
+# List the kernel-release.
+uname -r
+```
 - Set up **cron job**
 ```shell
 # Edit the file
@@ -91,7 +98,6 @@ netstat -at
 ```shell
 sudo yum install --downloadonly --downloaddir=/root/xxx <package_Name>
 ```
-
 - Directly crawl the data back and save the response.
 ```shell
 curl http://www.google.com > response.html
@@ -102,13 +108,18 @@ curl http://www.google.com > response.html
 <details>
 <summary>view subjects</summary>
 
-- change owner
+- Change the file's owner.
 ```shell
 chown root:root /var/log/file
 ```
-- change file permission
+- Change the file's permission.
 ```shell
 chmod 755 testfile.txt
+```
+- Modify the user's data.
+```shell
+usermod -l [newname] [username]
+usermod -p [password] [username]
 ```
 </details>
 
@@ -123,6 +134,10 @@ scp /path/file1 user@192.168.0.1:/path/
 - Find file name
 ```shell
 find /etc -iname 'KEYWORD'
+```
+- Locate the file path, usually find in $PATH.
+```shell
+which [packageName]
 ```
 - Live checking the log file in latest line.
 ```shell
