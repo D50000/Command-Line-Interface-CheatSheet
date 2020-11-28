@@ -2,38 +2,46 @@
 Detail:  
 https://makefiletutorial.com/
 
+-Run the makefile.
+A simple ```make``` will build the **first target** in the list.  
+```make all``` will build the target **all**. If you want **all** to be the default, then move it to the **top of the list**.
+
 - Reset the file and cache.
 ```make
 make clean
 ```
 
-- Print in makefile
+- Print the variable in makefile
 ```make
-TEST = test
+TEST = test_123
 target:
-    echo "This line will always print"
     echo Print out test: $(TEST)
 ```
 
-- Run makefile in silence mode that **@** before each line ```make -s```
+- Run makefile in silence mode that **@** before each line. Use ```make -s``` to disable showing all the commands. 
 ```make
 all:
-    @echo "This make line will not be printed"
+    @echo "Disable showing the command"
+    # "Disable showing the command"
+
+    echo "The Command will printed"
+    # echo "The Command will printed"
+    # "The Command will printed"
 ```
 
-- Run **shell** command
+- Run **shell** command special rule.
 ```make
 all:
+    # No Work! The cd above does not affect this line, because each command is effectively run in a new shell
     cd ..
-    # The cd above does not affect this line, because each command is effectively run in a new shell
-    echo `pwd`
+    pwd
 
     # This cd command affects the next because they are on the same line
-    cd ..;echo `pwd`
+    cd ..; pwd
 
     # Same as above
     cd ..; \
-    echo `pwd`
+    pwd
 ```
 
 - Modify the file attribute.
