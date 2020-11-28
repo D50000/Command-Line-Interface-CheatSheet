@@ -2,9 +2,9 @@
 Detail:  
 https://makefiletutorial.com/
 
--Run the makefile.
+- Run the makefile.  
 A simple ```make``` will build the **first target** in the list.  
-```make all``` will build the target **all**. If you want **all** to be the default, then move it to the **top of the list**.
+```make all``` will build the target **all**. If you want **all** to be the default, then move it to the **top of the list**.  
 
 - Reset the file and cache.
 ```make
