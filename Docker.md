@@ -57,7 +57,7 @@ docker ps -a
 exit
 ```
 
-- Exit but container keep alive
+- Exit but container keep alive  
 ```ctrl + p``` + ```ctrl + q```
 
 - Run a docker container
@@ -68,7 +68,19 @@ docker run [hello-world]
 
 
 ## Docker File
-<details>
-<summary>view subjects</summary>
+```
+FROM centos:7    # Docker Image name
+MAINTAINER jack    # Docker autor
 
-</details>
+RUN yum install -y wget    # linux command
+RUN cd /
+
+ADD jdk-8u152-linux-x64.tar.gz /    # Add the file to the image. (Same with Dockerfile folder)
+RUN wget http://apache.stu.edu.tw/tomcat/tomcat-7/v7.0.82/bin/apache-tomcat-7.0.82.tar.gz
+RUN tar zxvf apache-tomcat-7.0.82.tar.gz    # Untar the file.
+
+ENV JAVA_HOME=/jdk1.8.0_152    # Set up ENV $PATH for container
+ENV PATH=$PATH:/jdk1.8.0_152/bin
+
+CMD ["/apache-tomcat-7.0.82/bin/catalina.sh", "run"]    # Docker run will start this service
+```
