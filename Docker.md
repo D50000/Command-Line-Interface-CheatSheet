@@ -42,6 +42,16 @@ docker pull [ubuntu]
 docker images
 ```
 
+- Build Docker image, default will run the "Dockerfile".
+```shell
+docker build -t [imageName] . --no-cache
+```
+
+- Run a docker container
+```shell
+docker run [hello-world]
+```
+
 - Run the image and go in the container's terminal
 ```shell
 docker run -it [ubuntu] /bin/bash
@@ -52,18 +62,24 @@ docker run -it [ubuntu] /bin/bash
 docker ps -a
 ```
 
+- Enter the running container
+```shell
+docker exec [containerID] /bin/bash
+```
+
 - Exit and close the container
 ```shell
 exit
 ```
 
+- Mapping container's port to localhost's port.
+```shell
+docker run -p 8080:8080 [imageName]
+```
+
 - Exit but container keep alive  
 ```ctrl + p``` + ```ctrl + q```
 
-- Run a docker container
-```shell
-docker run [hello-world]
-```
 </details>
 
 
