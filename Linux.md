@@ -90,17 +90,25 @@ netstat -at
 ```
 </details>
 
-## Package Commands
+## Download Commands
 <details>
 <summary>view subjects</summary>
 
-- Download the package to the directory without install it.
+- Download the package to the directory without install it. (For CentOS)
 ```shell
 sudo yum install --downloadonly --downloaddir=/root/xxx <package_Name>
+```
+- Download the package and install it. (For Debian OS)
+```shell
+apt-get install <package_Name>
 ```
 - Directly crawl the data back and save the response.
 ```shell
 curl http://www.google.com > response.html
+```
+- Download files directly.
+```shell
+wget http://www.google.com/xxx.tar.gz
 ```
 </details>
 
@@ -135,7 +143,7 @@ scp /path/file1 user@192.168.0.1:/path/
 ```shell
 find /etc -iname 'KEYWORD'
 ```
-- Locate the file path, usually find in $PATH.
+- Locate the file path, usually find in 'ENVIRONMENT_VARIABLE $PATH'.
 ```shell
 which [packageName]
 ```
