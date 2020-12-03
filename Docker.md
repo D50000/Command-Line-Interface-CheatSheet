@@ -72,13 +72,25 @@ docker exec [containerID] /bin/bash
 exit
 ```
 
-- Mapping container's port to localhost's port.
+- Remove the container/image.
+```shell
+docker rm -f [ContainerName]
+docker rmi [imageName]
+```
+
+- Mapping host's port to container's port.
 ```shell
 docker run -p 8080:8080 [imageName]
 ```
 
 - Exit but container keep alive  
 ```ctrl + p``` + ```ctrl + q```
+
+- Export/Import the Docker Image into a **.tar**
+```shell
+docker save -o [name2.tar] name1
+docker load -i [name2.tar]
+```
 
 </details>
 
