@@ -29,12 +29,12 @@ docker -v
 
 - Search the Docker image name from Docker hub
 ```shell
-docker search [ubuntu] -f is-official=true
+docker search [imageName] -f is-official=true
 ```
 
 - Download the image
 ```shell
-docker pull [ubuntu]
+docker pull [imageName]
 ```
 
 - List images in local
@@ -47,14 +47,19 @@ docker images
 docker build -t [imageName] . --no-cache
 ```
 
-- Run a docker container
+- Run a docker image and container's process will run up.
 ```shell
-docker run [hello-world]
+docker run [imageName]
+```
+
+- Mapping the host's storage path with docker container's storage path.
+```shell
+docker run -it -v /[hostPath]:/[containerPath] [imageName] /bin/bash
 ```
 
 - Run the image and go in the container's terminal
 ```shell
-docker run -it [ubuntu] /bin/bash
+docker run -it [imageName] /bin/bash
 ```
 
 - Check all the Docker services
@@ -86,10 +91,16 @@ docker run -p 8080:8080 [imageName]
 - Exit but container keep alive  
 ```ctrl + p``` + ```ctrl + q```
 
-- Export/Import the Docker Image into a **.tar**
+- Export/Import the Docker Image into a **.tar** (execute in host)
 ```shell
-docker save -o [name2.tar] name1
-docker load -i [name2.tar]
+docker save -o [imageName.tar] [imageName]
+docker load -i [imageName.tar]
+```
+
+- Export/Import the Docker container into a **.tar** (execute in container)
+```shell
+docker export [ContainerName] > [ContainerName.tar]
+cat [ContainerName.tar] | docker import - [ImportContainerName.tar]
 ```
 
 </details>
@@ -98,6 +109,7 @@ docker load -i [name2.tar]
 ## Docker File
 ```
 FROM centos:7    # Docker Image name
+VOLUME ["/storage"]    # Set up docker volume mapping to host path
 MAINTAINER jack    # Docker autor
 
 RUN yum install -y wget    # linux command
