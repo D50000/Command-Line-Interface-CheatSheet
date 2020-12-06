@@ -3,7 +3,7 @@ Detail:
 https://docs.docker.com/engine/reference/commandline/docker/
 
 
-## Commands
+## General Commands
 <details>
 <summary>view subjects</summary>
 
@@ -123,4 +123,34 @@ ENV JAVA_HOME=/jdk1.8.0_152    # Set up ENV $PATH for container
 ENV PATH=$PATH:/jdk1.8.0_152/bin
 
 CMD ["/apache-tomcat-7.0.82/bin/catalina.sh", "run"]    # Docker run will start this service
+EXPOSE 8080    # Set up port
 ```
+
+
+## Docker-Compose
+<details>
+<summary>view subjects</summary>
+Download package:  
+wget https://github.com/docker/compose/releases/download/1.18.0/docker-compose-Linux-x86_64
+
+- Run the **docker-compose.yml** file. (-d: run in background )
+```shell
+docker-compose up -d
+```
+
+- Check Docker Containers status.
+```shell
+docker-compose ps
+```
+
+- Stop all docker-compose's Containers.
+```shell
+docker-compose stop
+```
+
+- Delete all docker-compose's Containers.
+```shell
+docker-compose rm
+```
+
+</details>
