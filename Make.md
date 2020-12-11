@@ -44,8 +44,15 @@ all:
     pwd
 ```
 
+- Regular expressions syntax.
+```make
+# Get all files in current path and test/ path.
+src = $(wildcard *.c) $(wildcard test/*.c)
+```
+
 - Modify the file attribute.
 ```make
+# Change *.c to *.o in this path.
 $(patsubst %.c, %.o, $(dir) )
 ```
 
