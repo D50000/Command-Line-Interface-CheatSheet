@@ -86,7 +86,7 @@ free -h
 ```
 - Check the IP services
 ```shell
-netstat -at
+ss -tunapls
 ```
 </details>
 
