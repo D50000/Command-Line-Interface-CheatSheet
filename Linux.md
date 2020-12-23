@@ -88,6 +88,13 @@ free -h
 ```shell
 ss -tunapls
 ```
+- Firewall check status, add/remove port, restart service.
+```shell
+firewall-cmd --list-all
+firewall-cmd --add-port=[portNumber]/tcp --permanent
+firewall-cmd --remove-port=[portNumber]/tcp  --permanent 
+firewall-cmd --reload
+```
 </details>
 
 ## Download Commands
