@@ -88,6 +88,10 @@ free -h
 ```shell
 ss -tunapls
 ```
+- Check the date time detail
+```shell
+timedatectl
+```
 - Firewall check status, add/remove port, restart service.
 ```shell
 firewall-cmd --list-all
