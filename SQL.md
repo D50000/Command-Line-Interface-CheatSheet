@@ -120,4 +120,9 @@ Ctrl + D
 \ds
 ```
 
+- Drop database.
+```
+DROP DATABASE [database_name] WITH (FORCE);
+```
+
 # ===============   Oracle Database   ===============
