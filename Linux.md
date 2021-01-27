@@ -133,7 +133,7 @@ chown root:root /var/log/file
 ```
 - Change the file's permission.
 ```shell
-chmod 755 testfile.txt
+chmod 755 [testfile.txt]
 ```
 - Modify the user's data.
 ```shell
