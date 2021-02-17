@@ -33,7 +33,7 @@ crontab -l
 ```
 - List all processes
 ```shell
-ps -a
+ps -ef
 ```
 - Run the process in background / foreground
 ```shell
