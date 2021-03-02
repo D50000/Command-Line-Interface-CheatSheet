@@ -10,10 +10,11 @@ http://linux.vbird.org/linux_basic/
 ```shell
 sudo reboot
 ```
-- Check CentOs/redhat version
+- Check CentOs/redhat/ubuntu version
 ```shell
 cat /etc/centos-release
-cat /etc/redhat-release 
+cat /etc/redhat-release
+cat /etc/os-release
 ```
 - Check Linux  by 'uname' command.
 ```shell
