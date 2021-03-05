@@ -23,6 +23,15 @@ uname -a
 # List the kernel-release.
 uname -r
 ```
+- Mount commands.
+```shell
+# Show all mount detail
+mount
+# Mount all devices in /etc/fstab
+sudo mount -a
+# Umount all devices in /etc/fstab
+sudo umount -a
+```
 - Set up **cron job**
 ```shell
 # Edit the file
