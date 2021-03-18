@@ -98,7 +98,7 @@ free -h
 ```shell
 ss -tunapls
 ```
-- Check the date time detail
+- Check the date time, NTP sync detail
 ```shell
 timedatectl
 ```
