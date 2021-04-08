@@ -42,6 +42,11 @@ git clean -dfx
 git add file_path
 ```
 
+- Remove code from **staged**
+```
+git reset HEAD -- [path]/[to]/[file]
+```
+
 - git commit the change
 ```
 git commit
