@@ -80,7 +80,7 @@ exit
 - Remove the container/image.
 ```shell
 docker rm -f [ContainerName]
-docker rmi [imageName]
+docker rmi [IMAGE ID]
 ```
 
 - Mapping host's port to container's port.
