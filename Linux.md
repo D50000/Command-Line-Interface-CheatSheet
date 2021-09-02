@@ -136,6 +136,7 @@ wget http://www.google.com/xxx.tar.gz
 ## Permission
 <details>
 <summary>view subjects</summary>
+
 - Change to other user.
 ```shell
 su [userName]
