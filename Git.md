@@ -72,7 +72,7 @@ git push <repository> <refspec>
 git reset HEAD^
 ```
 
-- Save current status
+- Save current status ('save' can be omitted)
 ```
 git stash save
 ```
@@ -85,4 +85,14 @@ git stash list
 - Restore the **stash**
 ```
 git stash pop
+```
+
+- Delete the latest **stash**
+```
+git stash drop
+```
+
+- Delete all the **stash**
+```
+git stash clear
 ```
