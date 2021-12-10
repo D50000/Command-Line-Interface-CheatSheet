@@ -122,6 +122,9 @@ RUN tar zxvf apache-tomcat-7.0.82.tar.gz    # Untar the file.
 ENV JAVA_HOME=/jdk1.8.0_152    # Set up ENV $PATH for container
 ENV PATH=$PATH:/jdk1.8.0_152/bin
 
+ARG NODE_VER   # Same as 'ENV' but it support external input variable
+ADD ./${NODE_VER:-node-v5.9.1-linux-armv7l} /
+
 CMD ["/apache-tomcat-7.0.82/bin/catalina.sh", "run"]    # Docker run will start this service
 EXPOSE 8080    # Set up port
 ```
