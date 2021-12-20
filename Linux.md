@@ -172,6 +172,10 @@ find /etc -iname 'KEYWORD'
 ```shell
 which [packageName]
 ```
+- Check the content different between two files.
+```shell
+diff fileName1 fileName2
+```
 - Live checking the log file in latest line.
 ```shell
 tail -f fileName
