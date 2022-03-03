@@ -65,6 +65,8 @@ git log
 - Push the commit to remote
 ```
 git push <repository> <refspec>
+# example
+git push origin HEAD:refs/for/master
 ```
 
 - Revert all change back to last commit
