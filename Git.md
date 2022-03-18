@@ -56,6 +56,13 @@ git commit
 ```
 git commit --amend
 ```
+  
+- Update the previous commit with new code change
+```
+# Add the file to stage and commit it
+git add ./codeChange.file
+git commit --amend
+```
 
 - Check the commit log
 ```
