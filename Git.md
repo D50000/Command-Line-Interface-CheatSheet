@@ -1,4 +1,4 @@
-# ===============  git bash  ===============  
+# ===============  git cli  ===============  
 Detail:  
 https://git-scm.com/docs
 
