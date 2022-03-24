@@ -84,6 +84,8 @@ git reset HEAD^
 - Save current status ('save' can be omitted)
 ```
 git stash save
+// Stash specific file
+git stash push ../file
 ```
 
 - List the current **stash** data
