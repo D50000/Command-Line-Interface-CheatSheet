@@ -100,7 +100,8 @@ git stash list
 
 - Restore the **stash**
 ```
-git stash pop
+git stash pop  # Drop the stash history
+git stash apply  # Keep the stash history
 ```
 
 - Delete the latest **stash**
