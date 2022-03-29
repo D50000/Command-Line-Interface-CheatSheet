@@ -22,6 +22,11 @@ git fetch <repository> <refspec>
 git merge <branch>
 ```
 
+- Switched to branch 'issue1'
+```
+git checkout issue1
+```
+
 - Update the local code and rebase the comparing point to the latest version
 ```
 git pull --rebase
