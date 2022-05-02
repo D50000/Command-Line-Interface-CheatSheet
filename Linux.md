@@ -62,9 +62,9 @@ screen
 # Keep it alive
 # "Ctrl + a" + "d"
 ```
-- Kill the process by PID
+- Kill the unresponsive process by PID
 ```shell
-kill 123
+kill -9 123
 ```
 - List all the services
 ```shell
