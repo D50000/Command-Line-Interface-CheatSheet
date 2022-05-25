@@ -22,9 +22,19 @@ git fetch <repository> <refspec>
 git merge <branch>
 ```
 
-- Switched to branch 'issue1'
+- Switch to branch 'branch01'
 ```
-git checkout issue1
+git checkout branch01
+```
+
+- Create and switch to new branch 'new_b'
+```
+git checkout -b new_b
+```
+
+- Delete the branch 'branch_remove'
+```
+git branch -d branch_remove
 ```
 
 - Update the local code and rebase the comparing point to the latest version
