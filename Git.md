@@ -22,9 +22,10 @@ git fetch <repository> <refspec>
 git merge <branch>
 ```
 
-- Switch to branch 'branch01'
+- Switch to branch 'branch01' or 'commitId'
 ```
 git checkout branch01
+git checkout 8955e93
 ```
 
 - Create and switch to new branch 'new_b'
