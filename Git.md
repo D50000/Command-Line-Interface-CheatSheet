@@ -38,7 +38,7 @@ git checkout -b new_b
 git branch -d branch_remove
 ```
 
-- Update the local code and rebase the comparing point to the latest version
+- Update the local code and rebase the comparing point to the latest version. (Rebase will omit a `merge` commit point)
 ```
 git pull --rebase
 ```
