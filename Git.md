@@ -124,3 +124,14 @@ git stash drop
 ```
 git stash clear
 ```
+  
+- Merge a commit '99daed2' from other branch. ([Detail](https://backlog.com/git-tutorial/tw/stepup/stepup7_4.html))
+```
+$ git checkout master
+Switched to branch 'master'
+$ git cherry-pick 99daed2
+error: could not apply 99daed2... commit
+hint: after resolving the conflicts, mark the corrected paths
+hint: with 'git add <paths>' or 'git rm <paths>'
+hint: and commit the result with 'git commit'
+```
