@@ -105,8 +105,8 @@ git reset HEAD^
 - Save current status ('save' can be omitted)
 ```
 git stash save
-// Stash specific file
-git stash push ../file
+git stash push ../file  # Stash specific file
+git stash -u  # Stash all the file include untracked.
 ```
 
 - List the current **stash** data
@@ -117,7 +117,7 @@ git stash list
 - Restore the **stash**
 ```
 git stash pop  # Drop the stash history
-git stash apply  # Keep the stash history
+git stash apply  # Keep the stash history, stash will keep store in list.
 ```
 
 - Delete the latest **stash**
