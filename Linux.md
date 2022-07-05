@@ -5,7 +5,8 @@ http://linux.vbird.org/linux_basic/
 ## System Service
 <details>
 <summary>view subjects</summary>
-- Connect to the remote server.(ps: Need to provide the public key first.)
+
+- Connect to the remote server. (ps: Need to provide the public key first.)
 ```shell
 ssh userName@10.1.3.51
 ```
