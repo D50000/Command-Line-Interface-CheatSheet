@@ -40,7 +40,10 @@ git branch -d branch_remove
 
 - Show the branches
 ```
+# With commits detail.
 git show-branch
+# Simple branchs.
+git branch
 ```
 
 - Update the local code and rebase the comparing point to the latest version. (Rebase will omit a `merge` commit point)
