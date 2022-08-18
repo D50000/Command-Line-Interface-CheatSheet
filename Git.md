@@ -33,6 +33,11 @@ git checkout 8955e93
 git checkout -b new_b
 ```
 
+- Rename the branch name
+```
+git branch -m newBranchName
+```
+
 - Delete the branch 'branch_remove'
 ```
 git branch -d branch_remove
