@@ -17,9 +17,10 @@ git pull <repository> <refspec>
 git fetch <repository> <refspec>
 ```
 
-- Merge <branch> to <master>
+- Merge 'newBranch' to 'master'
 ```
-git merge <branch>
+// git Checkout and switch to master branch
+git merge newBranch
 ```
 
 - Switch to branch 'branch01' or 'commitId'
