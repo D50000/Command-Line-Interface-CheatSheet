@@ -104,6 +104,8 @@ git log
 git push <repository> <refspec>
 # example
 git push origin HEAD:refs/for/master
+# Create a new branch 'newBranch' at upstream and push/refs it from local. 
+git push --set-upstream origin newBranch
 ```
 
 - Revert all change back to last commit
