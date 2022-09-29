@@ -144,7 +144,7 @@ git stash drop
 git stash clear
 ```
   
-- Merge a commit '99daed2' from other branch. ([Detail](https://backlog.com/git-tutorial/tw/stepup/stepup7_4.html))
+- Cherry-pick: Merge a commit '99daed2' from other branch to master branch. ([Detail](https://backlog.com/git-tutorial/tw/stepup/stepup7_4.html))
 ```
 $ git checkout master
 Switched to branch 'master'
