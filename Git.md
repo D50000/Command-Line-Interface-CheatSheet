@@ -57,6 +57,11 @@ git branch
 git pull --rebase
 ```
 
+- Undo and abort the rebase progress.
+```
+git rebase --abort
+```
+
 - Check and compare the local / remote source
 ```
 git status
