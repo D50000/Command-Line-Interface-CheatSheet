@@ -23,6 +23,11 @@ git fetch <repository> <refspec>
 git merge newBranch
 ```
 
+- Cancel the in progress merge task.
+```
+git merge --abort
+```
+
 - Switch to branch 'branch01' or 'commitId'
 ```
 git checkout branch01
