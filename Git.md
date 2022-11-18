@@ -128,8 +128,8 @@ git reset HEAD^
 
 - Revert back with spcific commit hash
 ```
-git revert c0d0001      # Normal commit   
-git revert c0d0002 -m 1 # Merge commit
+git revert c0d0001      # Normal commit. 
+git revert c0d0002 -m 1 # Merge commit "-m 1" means commit parent 1.
 ```
 
 - Save current status ('save' can be omitted)
