@@ -67,6 +67,11 @@ git pull --rebase
 git rebase --abort
 ```
 
+- Rebase Interactive Mode.  ([Detail](https://dotblogs.com.tw/wasichris/2016/05/04/re))
+```
+git rebase -i 069f5ac # Support modify multiple commit logs.
+```
+
 - Check and compare the local / remote source
 ```
 git status
