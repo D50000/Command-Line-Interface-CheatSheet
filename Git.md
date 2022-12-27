@@ -129,6 +129,8 @@ git push origin HEAD:refs/for/master
 git push --set-upstream origin newBranch 
 # ex2
 git push -u origin newBranch
+# ex3 Force push to replace the remote branch.
+git push --force
 ```
 
 - Revert all change back to last commit
