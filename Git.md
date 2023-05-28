@@ -151,9 +151,10 @@ git stash push ../file  # Stash specific file
 git stash -u  # Stash all the file include untracked.
 ```
 
-- List the current **stash** data
+- Display **stash** data
 ```
-git stash list
+git stash show // Show last detail stash.
+git stash list // List out all stash data.
 ```
 
 - Restore the **stash**
