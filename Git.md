@@ -174,7 +174,8 @@ git stash drop
 git stash clear
 ```
   
-- Cherry-pick: Merge a commit '99daed2' from other branch to master branch. ([Detail](https://backlog.com/git-tutorial/tw/stepup/stepup7_4.html))
+- Cherry-pick: Merge a commit '99daed2' from other branch to master branch.
+  It also can pick the commit from the current branch to the top commit. ([Detail](https://backlog.com/git-tutorial/tw/stepup/stepup7_4.html))
 ```
 $ git checkout master
 Switched to branch 'master'
