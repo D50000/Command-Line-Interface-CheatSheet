@@ -4,7 +4,8 @@ https://git-scm.com/docs
 
 - Clone the source
 ```
-git clone <url>
+git clone <url> // Generic clone.
+git clone https://$userAccount@github.com/xxxxxx/xxxxxxx.git  // Use $userAccount to clone the git file.
 ```
 
 - Pull the source down and replace the local source **(pull = fetch + merge)**
