@@ -93,6 +93,11 @@ git clean -dfx
 git add file_path
 ```
 
+- Compare the **working directory** with **staging area**.
+```
+git diff
+```
+
 - Remove code from **staged**
 ```
 git reset HEAD -- [path]/[to]/[file]
