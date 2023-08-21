@@ -155,7 +155,7 @@ git revert c0d0002 -m 1 # Merge commit "-m 1" means commit parent 1.
 git stash save
 git stash push ../file  # Stash specific file
 git stash push -m "my_stash_name"  # Stash with title.
-git stash -u  # Stash all the file include untracked.
+git stash -u  # Stash all the file include untracked. (-u == --include-untracked)
 ```
 
 - Display **stash** data
