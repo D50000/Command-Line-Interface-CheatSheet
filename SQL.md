@@ -29,17 +29,17 @@ show tables;
 
 - Show this table data structure.
 ```
-describe [tabeName];
+describe [tableName];
 ```
 
 - Select the data from table.
 ```
-SELECT [columnA], [columnB] FROM [tabeName];
+SELECT [columnA], [columnB] FROM [tableName];
 ```
 
 - Update the table data.
 ```
-UPDATE [tabeName] SET [columnA]='123' WHERE [columnB]='ABC';
+UPDATE [tableName] SET [columnA]='123' WHERE [columnB]='ABC';
 ```
 
 - Drop database.
@@ -65,7 +65,7 @@ create index [index_name] on [table_name] (column1, column2, ...);
 
 - Creates a **PRIMARY KEY** on the "ID" column when the "Persons" table is created
 ```
-CREATE TABLE [tablename] (
+CREATE TABLE [tableName] (
   ID int NOT NULL,
   [AAA] varchar(255) NOT NULL,
   [BBB] varchar(255),
@@ -76,7 +76,7 @@ CREATE TABLE [tablename] (
 
 - Diagnose the query process.
 ```
-explain select [column1] from [tablename];
+explain select [column1] from [tableName];
 ```
 
 # ===============   PostgreSQL   ===============
