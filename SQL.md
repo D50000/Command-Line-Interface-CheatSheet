@@ -58,6 +58,16 @@ VALUES (1000, 'Eddie', '19111021');
 UPDATE [tableName] SET [columnA]='123' WHERE [columnB]='ABC';
 ```
 
+- Update data if exist otherwise insert new data.  
+  **INSERT ON DUPLICATE KEY UPDATE**
+
+```sql
+INSERT INTO [tableName] (column_1, column_2, column_3, ...)
+VALUES (value_1, value_2, value_3, ...)
+ON DUPLICATE KEY UPDATE
+  column_1 = VALUES(column_1), column_2 = VALUES(column_2), ...;
+```
+
 - Drop database.
 
 ```sql
@@ -157,3 +167,19 @@ DROP DATABASE [database_name] WITH (FORCE);
 ```
 
 # =========== Oracle Database ===========
+
+Detail:  
+https://docs.oracle.com/en/database/oracle/sql-developer-web/sdwad/object-navigator-and-files.html#GUID-88D1B5D3-88A7-4269-BE7A-C286B1E663DE
+
+- Update data if exist otherwise insert new data.  
+  **MERGE INTO**
+
+```sql
+MERGE INTO [tableName] target
+USING (SELECT ? AS Column1, ? AS Column2 FROM dual) source -- 'USING'是一個子句sql
+ON (target.UniqueColumn = source.Column1) -- 指定用于匹配的列
+WHEN MATCHED THEN
+    UPDATE SET target.Column2 = source.Column2 -- 如果匹配，則執行更新
+WHEN NOT MATCHED THEN
+    INSERT (Column1, Column2) VALUES (source.Column1, source.Column2); -- 如果不匹配，則執行插入
+```
