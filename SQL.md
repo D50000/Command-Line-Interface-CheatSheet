@@ -59,7 +59,7 @@ UPDATE [tableName] SET [columnA]='123' WHERE [columnB]='ABC';
 ```
 
 - Update data if exist otherwise insert new data.  
-  **INSERT ON DUPLICATE KEY UPDATE**
+  `INSERT ON DUPLICATE KEY UPDATE`
 
 ```sql
 INSERT INTO [tableName] (column_1, column_2, column_3, ...)
@@ -72,6 +72,12 @@ ON DUPLICATE KEY UPDATE
 
 ```sql
 drop database [DatabaseName];
+```
+
+- Delete table rows.
+
+```sql
+DELETE FROM [table_name] WHERE [some_column] = 'testFail';
 ```
 
 - Export / Import DB
@@ -171,8 +177,10 @@ DROP DATABASE [database_name] WITH (FORCE);
 Detail:  
 https://docs.oracle.com/en/database/oracle/sql-developer-web/sdwad/object-navigator-and-files.html#GUID-88D1B5D3-88A7-4269-BE7A-C286B1E663DE
 
+PS: Oracle Database originally support **SQL** buy no **HQL** (**Hibernate** - Java ORM framework).
+
 - Update data if exist otherwise insert new data.  
-  **MERGE INTO**
+  `MERGE INTO`
 
 ```sql
 MERGE INTO [tableName] target
