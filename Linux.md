@@ -100,6 +100,11 @@ history
 top
 ```
 
+- Show the cpu detail
+```shell
+cat /proc/cpuinfo
+```
+
 - Check the disk volume the usage
 ```shell
 df -h
