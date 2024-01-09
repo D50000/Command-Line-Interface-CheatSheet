@@ -65,6 +65,12 @@ bg %1
 fg %1
 ```
 
+- Run the command at the background.
+```shell
+# Run the script at background.
+nohup /root/test.sh &
+```
+
 - Keep the session alive to run the job when disconnect
 ```shell
 # Need to install the dependency first
