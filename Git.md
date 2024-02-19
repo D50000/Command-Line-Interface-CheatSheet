@@ -123,6 +123,9 @@ git commit --amend
 - Check the commit log
 ```
 git log
+git log --oneline # Show the short log.
+git log --graph  # Show the log graph.
+git log --stat   # Change files.
 ```
 
 - Push the commit to remote
