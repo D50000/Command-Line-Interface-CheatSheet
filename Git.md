@@ -126,6 +126,8 @@ git log
 git log --oneline # Show the short log.
 git log --graph  # Show the log graph.
 git log --stat   # Change files.
+git log <xxx branch> # Show only xxx branch log.
+git log --author="xxx user" # Show the xxx user commit.
 ```
 
 - Push the commit to remote
