@@ -51,7 +51,7 @@ crontab -e
 crontab -l
 ```
 
-- List all processes
+- List all running processes
 ```shell
 ps -ef
 ```
