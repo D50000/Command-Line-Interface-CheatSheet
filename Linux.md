@@ -51,6 +51,11 @@ crontab -e
 crontab -l
 ```
 
+- List all ip tables config
+```shell
+iptables -L -n
+```
+
 - List all running processes
 ```shell
 ps -ef
