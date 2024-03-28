@@ -59,9 +59,10 @@ sudo iptables -A INPUT -p tcp --dport 22 -s 192.168.1.100 -j ACCEPT # Accept 192
 sudo iptables -D INPUT 5 # Remove line number 5 ip config.
 ```
 
-- List all running processes
+- List all running processes. (ps: `-e` and `ax` are completely equivalent)
 ```shell
-ps -ef
+ps aux # Brief info and different layout
+ps -ef # Process info, PID, user, usage
 ```
 
 - Run the process in background / foreground
