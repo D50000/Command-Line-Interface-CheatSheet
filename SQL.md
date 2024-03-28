@@ -1,7 +1,6 @@
 # ================ Mysql ================
 
-Detail:  
-https://www.w3schools.com/sql/
+Detail: [Mysql doc](https://www.w3schools.com/sql/)
 
 - For login mysql DB.
 
@@ -119,7 +118,7 @@ explain select [column1] from [tableName];
 
 # =============== PostgreSQL ===============
 
-https://www.postgresqltutorial.com/
+Detail: [PostgreSQL doc](https://www.postgresqltutorial.com/)
 
 - Version check.
 
@@ -174,8 +173,7 @@ DROP DATABASE [database_name] WITH (FORCE);
 
 # =========== Oracle Database ===========
 
-Detail:  
-https://docs.oracle.com/en/database/oracle/sql-developer-web/sdwad/object-navigator-and-files.html#GUID-88D1B5D3-88A7-4269-BE7A-C286B1E663DE
+Detail: [Oracle doc](https://docs.oracle.com/en/database/oracle/sql-developer-web/sdwad/object-navigator-and-files.html#GUID-88D1B5D3-88A7-4269-BE7A-C286B1E663DE)
 
 PS: Oracle Database originally support **SQL** buy no **HQL** (**Hibernate** - Java ORM framework).
 
