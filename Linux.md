@@ -262,8 +262,12 @@ cat /etc/passwd | awk -F ':' '{print $1"\t"$7}'
 
 - Highlight and choose the line
 ```shell
-# V for choose all line, v for single word.
+# Toggle into <visual mode> and V for choose all line, v for single word.
 <normal mode> V 
+# Select whole file content.
+<normal mode> gg  # Move to top.
+<normal mode> G  # Move to bottom.
+<normal mode> v  # Switch to <visual mode>.
 ```
 
 - Copy what you select
@@ -295,7 +299,7 @@ cat /etc/passwd | awk -F ':' '{print $1"\t"$7}'
 ```shell
 # / for search frontward, ? for search backward.
 # n for next match, N for previous.
-# For escape character search use /api/vi\/abc
+# For escape character search use /api\/vi
 <normal mode> /keyword
 ```
 
