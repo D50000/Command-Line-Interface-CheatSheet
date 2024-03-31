@@ -293,8 +293,9 @@ cat /etc/passwd | awk -F ':' '{print $1"\t"$7}'
 
 - Search keyword
 ```shell
-# **/** for search frontward, **?** for search backward.
-# **n** for next match, **N** for previous.
+# / for search frontward, ? for search backward.
+# n for next match, N for previous.
+# For escape character search use /api/vi\/abc
 <normal mode> /keyword
 ```
 
