@@ -47,7 +47,7 @@ sudo umount -a
 crontab -e
 # At 00:05 in August will run the test.py job
 5 0 * 8 * /use/bin/python3 /home/test.py
-# Check the crontable jobs.
+# Check the crontab jobs.
 crontab -l
 ```
 
