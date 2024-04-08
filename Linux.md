@@ -303,9 +303,12 @@ cat /etc/passwd | awk -F ':' '{print $1"\t"$7}'
 <normal mode> /keyword
 ```
 
-- Search the keyword and save it
+- Truncate the log file and save as new file.
 ```shell
+# Search the keyword and save it
 grep "1111" /tmp/catalina.out.2018-08-20 > 123321.log
+# Save log file line number 'x' to 'y'.
+100,1000w new_log.log
 ```
 </details>
 
