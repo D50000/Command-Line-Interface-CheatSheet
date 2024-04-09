@@ -68,9 +68,11 @@ git tag -l "v1.8.5*"
 
 - Create tags
 ```
-# Add simple tag with version
+# Add light-weight tag (simple tag attache on commit)
+git tag v1.4
+# Add normal tag
 git tag -a v1.4
-# Add tag with version and comment
+# Add normal tag with comment
 git tag -a v1.4 -m "my_version 1.4"
 # Add tag on history commit
 git tag -a v1.4 9fceb02
