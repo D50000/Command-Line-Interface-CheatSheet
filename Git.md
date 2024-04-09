@@ -58,20 +58,42 @@ git show-branch
 git branch
 ```
 
-- Show tags
+- List out tags
 ```
-# Show all tags
+# List all tags
 git tag
 # Search for "v1.8.5*" prefix
 git tag -l "v1.8.5*"
 ```
 
-- Add tags
+- Create tags
 ```
 # Add simple tag with version
 git tag -a v1.4
 # Add tag with version and comment
 git tag -a v1.4 -m "my_version 1.4"
+# Add tag on history commit
+git tag -a v1.4 9fceb02
+```
+
+- Show tag info (date, author, comment)
+```
+# Show v1.4 tag info
+git show v1.4
+```
+
+- Push the tag to remote server
+```
+# Push single tag
+git push origin [tag_name]
+# Push all local tags
+git push origin --tags
+```
+
+- Delete tags
+```
+git tag -d [tag1] [tag2]
+git push --delete origin [tag1] [tag2]
 ```
 
 - Update the local code and rebase the comparing point to the latest version. (Rebase will omit a `merge` commit point)
