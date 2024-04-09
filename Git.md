@@ -70,7 +70,7 @@ git tag -l "v1.8.5*"
 ```
 # Add light-weight tag (simple tag attache on commit)
 git tag v1.4
-# Add normal tag
+# Add normal tag (additional annotation)
 git tag -a v1.4
 # Add normal tag with comment
 git tag -a v1.4 -m "my_version 1.4"
@@ -152,7 +152,7 @@ git commit
 ```
 git commit --amend
 ```
-  
+
 - Update the previous commit with new code change
 ```
 # Add the file to stage and commit it
@@ -190,7 +190,7 @@ git push --force
 git reset HEAD^
 ```
 
-- Revert back with spcific commit hash
+- Revert back with specific commit hash
 ```
 git revert c0d0001      # Normal commit. 
 git revert c0d0002 -m 1 # Merge commit "-m 1" means commit parent 1.
