@@ -54,8 +54,24 @@ git branch -d branch_remove
 ```
 # With commits detail.
 git show-branch
-# Simple branchs.
+# Simple branches.
 git branch
+```
+
+- Show tags
+```
+# Show all tags
+git tag
+# Search for "v1.8.5*" prefix
+git tag -l "v1.8.5*"
+```
+
+- Add tags
+```
+# Add simple tag with version
+git tag -a v1.4
+# Add tag with version and comment
+git tag -a v1.4 -m "my_version 1.4"
 ```
 
 - Update the local code and rebase the comparing point to the latest version. (Rebase will omit a `merge` commit point)
