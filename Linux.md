@@ -326,17 +326,23 @@ tar xvf FileName.tar
 ```shell
 zip -r file.zip directory_name
 unzip file.zip
+# unzip into specific path
+unzip filename.zip -d /path/to/directory
 ```
 
 - gzip / gunzip
 ```shell
 gzip FileName
 gunzip FileName.gz
+# Keep the gz file and gunzip it
+gunzip -k FileName.gz
 ```
 
 - rar / unrar
 ```shell
 rar a FileName.rar DirName
 rar e FileName.rar
+# Keep the rar file and unzip rar
+rar x FileName.rar
 ```
 </details>
