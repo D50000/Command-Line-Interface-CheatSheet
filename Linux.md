@@ -140,9 +140,10 @@ free -h
 ss -tunapls
 ```
 
-- Check the date time, NTP sync detail
+- Check the date time, NTP(Network Time Protocol), RTC(Real-Time Clock) sync detail
 ```shell
-timedatectl
+timedatectl status
+cat /etc/ntp.conf  # ntp configuration
 ```
 
 - Firewall check status, add/remove port, restart service.
