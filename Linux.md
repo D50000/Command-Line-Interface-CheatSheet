@@ -261,6 +261,12 @@ cat /etc/passwd | awk -F ':' '{print $1"\t"$7}'
 <details>
 <summary>view subjects</summary>
 
+- vim/vi file with readonly mode.
+```shell
+# It will pop up error it modify the file.
+vim -R [filename]
+```
+
 - Highlight and choose the line
 ```shell
 # Toggle into <visual mode> and V for choose all line, v for single word.
