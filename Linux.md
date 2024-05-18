@@ -16,6 +16,12 @@ ssh userName@10.1.3.51
 sudo reboot
 ```
 
+- Print out the text.
+```shell
+echo Hello World
+echo -e  # Print compile the special character.
+```
+
 - Check CentOs/redhat/ubuntu version
 ```shell
 cat /etc/centos-release
