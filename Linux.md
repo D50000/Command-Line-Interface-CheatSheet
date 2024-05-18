@@ -73,11 +73,15 @@ ps -ef # Process info, PID, user, usage
 
 - Run the process in background / foreground
 ```shell
-# 'Ctrl + z' to stop it first and get the number
-# Run at background
-bg %1
+# First run the run.sh file. `Ctrl + z` to stop it and keep into background.
+sh run.sh
+# Show all the sh process. "1" will be the process id number.
+jobs
+[1]+ Stopped sh run.sh
 # Run at foreground
 fg %1
+# Run at background
+bg %1
 ```
 
 - Run the command at the background.
@@ -88,7 +92,7 @@ nohup /root/test.sh &
 
 - Keep the session alive to run the job when disconnect
 ```shell
-# Need to install the dependency first
+# Need to install other package first
 yum install screen
 # Use 'screen'
 screen
