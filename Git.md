@@ -146,6 +146,7 @@ git reset HEAD -- [path]/[to]/[file]
 - git commit the change
 ```
 git commit
+git commit -m "add new page" // Shortcut for comment.
 ```
 
 - Fix the previous commit comment
