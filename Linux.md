@@ -71,7 +71,7 @@ ps aux # Brief info and different layout
 ps -ef # Process info, PID, user, usage
 ```
 
-- Run the process in background / foreground
+- Run the process in background / foreground (**Kill** when ssh disconnect)
 ```shell
 # First run the run.sh file. `Ctrl + z` to stop it and keep into background.
 sh run.sh
@@ -82,12 +82,19 @@ jobs
 fg %1
 # Run at background
 bg %1
+###############################
+# Run the script at background.
+sh run.sh &
+# Run in background with log. (2: stderr, 1: stdout)
+sh run.sh > output.log 2>&1 &
 ```
 
-- Run the command at the background.
+- Run the command at the background **even disconnect from server**.
 ```shell
 # Run the script at background.
 nohup /root/test.sh &
+# Run in background with log. (2: stderr, 1: stdout)
+nohup /root/test.sh > output.log 2>&1 &
 ```
 
 - Keep the session alive to run the job when disconnect
