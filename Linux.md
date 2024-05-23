@@ -57,11 +57,18 @@ crontab -e
 crontab -l
 ```
 
-- List all ip tables config
+- Ip tables config.  
+`-A`: **append** rule at end  
+`-I`: **insert** rule at start  
+`-L`: **list** out the rules  
+`-p`: **protocol** type  
+`-s`: **source** ip  
+`-j`: **job** ACCEPT or REJECT  
+`-D`: **delete** the rule  
 ```shell
 sudo iptables -A INPUT -j ACCEPT # Accept all input link.
 sudo iptables -L INPUT --line-numbers # Show all config with line number.
-sudo iptables -A INPUT -p tcp --dport 22 -s 192.168.1.100 -j ACCEPT # Accept 192.168.1.100 connect with 22 port.
+sudo iptables -A INPUT -p tcp --dport 22:7001:7002 -s 192.168.1.100 -j ACCEPT # Accept 192.168.1.100 connect with 22, 7001, 7002 port.
 sudo iptables -D INPUT 5 # Remove line number 5 ip config.
 ```
 
@@ -88,7 +95,7 @@ sh run.sh &
 # Run in background with log. (2: stderr, 1: stdout)
 sh run.sh > output.log 2>&1 &
 ```
-![](https://github.com/D50000/Command-Line-Interface-CheatSheet/blob/main/asstes/process_work_flow.png)  
+![](https://github.com/D50000/Command-Line-Interface-CheatSheet/blob/master/assets/process_work_flow.png)  
 
 - Run the command at the background **even disconnect from server**.
 ```shell
