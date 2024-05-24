@@ -95,7 +95,7 @@ sh run.sh &
 # Run in background with log. (2: stderr, 1: stdout)
 sh run.sh > output.log 2>&1 &
 ```
-![](https://github.com/D50000/Command-Line-Interface-CheatSheet/blob/master/assets/process_work_flow.png)  
+<img src="https://github.com/D50000/Command-Line-Interface-CheatSheet/blob/master/assets/process_work_flow.png" alt="process work flow" width="550px">  
 
 - Run the command at the background **even disconnect from server**.
 ```shell
