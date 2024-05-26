@@ -68,7 +68,7 @@ crontab -l
 ```shell
 sudo iptables -A INPUT -j ACCEPT # Accept all input link.
 sudo iptables -L INPUT --line-numbers # Show all config with line number.
-sudo iptables -A INPUT -p tcp --dport 22:7001:7002 -s 192.168.1.100 -j ACCEPT # Accept 192.168.1.100 connect with 22, 7001, 7002 port.
+sudo iptables -A INPUT -p tcp --dport 7001:7005 -s 192.168.1.100 -j ACCEPT # Accept 192.168.1.100 connect with 7001 ~ 7005 port.
 sudo iptables -D INPUT 5 # Remove line number 5 ip config.
 ```
 
