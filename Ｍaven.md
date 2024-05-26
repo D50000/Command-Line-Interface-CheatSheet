@@ -17,6 +17,12 @@ mvn --version
 mvn compile
 ```
 
+- It will `compile` the source code and test code. Then run the test case usually by **JUnit** or **TestNG** framework.
+
+```shell
+mvn test
+```
+
 - It include `mvn compile` the code first and install in `local maven repository`. Provide for other local repositories or project to use.
 
 ```shell
