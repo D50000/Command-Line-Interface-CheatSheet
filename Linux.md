@@ -122,7 +122,8 @@ kill -9 123
 
 - **systemctl** commands
 ```shell
-systemctl  # List out all system service
+systemctl                            # List out all system detail service
+systemctl list-units --type=service  # Show only service info
 sudo systemctl start test.service    # Run
 sudo systemctl stop test.service     # Stop
 sudo systemctl restart test.service  # Rerun
