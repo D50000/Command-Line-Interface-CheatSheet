@@ -120,14 +120,16 @@ screen
 kill -9 123
 ```
 
-- List all the services
+- **systemctl** commands
 ```shell
-systemctl
-```
-
-- Restarting and Reloading
-```shell
-sudo systemctl restart test.service
+systemctl  # List out all system service
+sudo systemctl start test.service    # Run
+sudo systemctl stop test.service     # Stop
+sudo systemctl restart test.service  # Rerun
+sudo systemctl reload test.service   # Refresh and won't stop
+sudo systemctl enable test.service   # Server reboot will auto run
+sudo systemctl disable test.service  # Turn off auto run
+sudo systemctl status test.service   # Check info
 ```
 
 - Show the command history
