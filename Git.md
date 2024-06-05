@@ -136,6 +136,8 @@ git add file_path
 - Compare the **working directory** with **staging area**.
 ```
 git diff
+# Compare the different of two commit and export to 'diff.txt' file.
+git diff-tree -r --no-commit-id --name-status --text --diff-filter=ACDMRT [lastCommit] [newCommit] diff.txt
 ```
 
 - Remove code from **staged**
