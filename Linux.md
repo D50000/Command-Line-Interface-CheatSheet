@@ -115,9 +115,13 @@ screen
 # "Ctrl + a" + "d"
 ```
 
-- Kill the unresponsive process by PID
+- Kill the process by it's PID
 ```shell
-kill -9 123
+kill -9 12345
+# Find and kill the process name
+pkill -f myApp.jar
+# Avoid miss matching process name
+pkill -f myApp.jar || true
 ```
 
 - **systemctl** commands
