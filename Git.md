@@ -192,6 +192,7 @@ git push --force
 - Revert all change back to last commit
 ```
 git reset HEAD^
+git reset --hard c3befa  # Reset all commit back to commit id.(**Not detached**) 
 ```
 
 - Revert back with specific commit hash
