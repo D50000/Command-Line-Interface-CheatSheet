@@ -29,7 +29,7 @@ cat /etc/redhat-release
 cat /etc/os-release
 ```
 
-- Check Linux  by 'uname' command.
+- Check Linux information by 'uname' command.
 ```shell
 # List all info.
 uname -a
@@ -76,6 +76,13 @@ sudo iptables -D INPUT 5 # Remove line number 5 ip config.
 ```shell
 ps aux # Brief info and different layout
 ps -ef # Process info, PID, user, usage
+```
+
+- Check the details of process by its `PID`.
+```shell
+ps -p PID -f  # Process Status command.
+lsof -p PID   # List Open Files command.
+ss -pl | grep PID   # Socket Statistics command.
 ```
 
 - Run the process in background / foreground (**Kill** when ssh disconnect)
