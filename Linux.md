@@ -365,7 +365,8 @@ grep "1111" /tmp/catalina.out.2018-08-20 > 123321.log
 - tar / untar
 ```shell
 tar cvf FileName.tar DirName
-tar xvf FileName.tar
+tar xvf FileName.tar  # untar
+tar Jxvf FileName.tar.xz  # untar
 ```
 
 - zip / unzip
