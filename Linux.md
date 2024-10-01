@@ -124,7 +124,13 @@ screen
 
 - Kill the process by it's PID
 ```shell
+# Signal '9' forcefully terminates the process without giving it a chance to clean up.
 kill -9 12345
+# Signal '15' (default) for a graceful shutdown.
+kill 12345
+# Gracefully kill all the match process PID.
+ps -ef | grep xxx.jar | awk '{print $2}' | xargs kill
+
 # Find and kill the process name
 pkill -f myApp.jar
 # Avoid miss matching process name
