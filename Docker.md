@@ -54,7 +54,8 @@ docker run [imageName]
 
 - Mapping local host's port:8080 to container's port:8081.
 ```shell
-docker run -p 8080:8081 [imageName]
+docker run -p 8080:8081 [imageName] # Attach mode
+docker run -d -p  8080:8081 [imageName] # Detached mode: run in background
 ```
 
 - Exit but container keep alive. (Move the process to background)
