@@ -52,6 +52,14 @@ docker build -t [imageName] . --no-cache
 docker run [imageName]
 ```
 
+- Mapping local host's port:8080 to container's port:8081.
+```shell
+docker run -p 8080:8081 [imageName]
+```
+
+- Exit but container keep alive. (Move the process to background)
+```ctrl + p``` + ```ctrl + q```
+
 - Mapping the host's storage path with docker container's storage path.
 ```shell
 docker run -it -v /[hostPath]:/[containerPath] [imageName] /bin/bash
@@ -82,14 +90,6 @@ exit
 docker rm -f [ContainerName]
 docker rmi [IMAGE ID]
 ```
-
-- Mapping host's port to container's port.
-```shell
-docker run -p 8080:8080 [imageName]
-```
-
-- Exit but container keep alive  
-```ctrl + p``` + ```ctrl + q```
 
 - Export/Import the Docker Image into a **.tar** (execute in host)
 ```shell
