@@ -111,7 +111,7 @@ cat [ContainerName.tar] | docker import - [ImportContainerName.tar]
 ```
 FROM centos:7    # Docker Image name
 VOLUME ["/storage"]    # Set up docker volume mapping to host path
-MAINTAINER jack    # Docker autor
+MAINTAINER Jack    # Docker author
 
 RUN yum install -y wget    # linux command
 RUN cd /
