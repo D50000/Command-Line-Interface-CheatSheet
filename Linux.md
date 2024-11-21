@@ -251,8 +251,8 @@ chmod 755 [testfile.txt]
 
 - Modify the user's data.
 ```shell
-usermod -l [newname] [username]
-usermod -p [password] [username]
+usermod -l [newName] [oldUserName] # -l means "login name"
+usermod -p [password] [username] # -p means "password"
 ```
 </details>
 
