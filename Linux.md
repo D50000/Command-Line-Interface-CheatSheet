@@ -234,12 +234,12 @@ wget http://www.google.com/xxx.tar.gz
 su [userName]
 ```
 
-- Change the file's owner.
+- Change owner the file's owner, and file's user group.
 ```shell
 chown root:root /var/log/file
 ```
 
-- Change the file's permission.
+- Change mode the file's permission.
 ```shell
 chmod 755 [testfile.txt]
 ```
