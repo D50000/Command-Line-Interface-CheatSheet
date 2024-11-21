@@ -239,6 +239,11 @@ su [userName]
 chown root:root /var/log/file
 ```
 
+- Change user group.
+```shell
+chgrp groupname testfile.txt
+```
+
 - Change mode the file's permission.
 ```shell
 chmod 755 [testfile.txt]
