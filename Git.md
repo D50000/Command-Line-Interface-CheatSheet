@@ -217,7 +217,8 @@ git stash list // List out all stash data.
 
 - Restore the **stash**
 ```
-git stash pop  # Drop the stash history
+git stash pop  # Restore the data and drop the stash history
+git stash pop stash@{n} # To pop (i.e. apply and drop) the `n` stash.
 git stash apply  # Keep the stash history, stash will keep store in list.
 ```
 
