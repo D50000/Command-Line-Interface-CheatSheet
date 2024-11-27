@@ -192,7 +192,7 @@ git push --force
 - Revert all change back to last commit
 ```
 git reset HEAD^
-git reset --hard c3befa  # Reset all commit back to commit id.(**Not detached**) 
+git reset --hard c3befa  # Reset all commit back to commit id. (Not same as detached) 
 ```
 
 - Revert back with specific commit hash
@@ -201,7 +201,7 @@ git revert c0d0001      # Normal commit.
 git revert c0d0002 -m 1 # Merge commit "-m 1" means commit parent 1.
 ```
 
-- Save current status ('save' can be omitted)
+- Save current status (**save** can be omitted)
 ```
 git stash save
 git stash push ../file  # Stash specific file

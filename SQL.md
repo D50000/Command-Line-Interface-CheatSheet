@@ -182,10 +182,10 @@ PS: Oracle Database originally support **SQL** buy no **HQL** (**Hibernate** - J
 
 ```sql
 MERGE INTO [tableName] target
-USING (SELECT ? AS Column1, ? AS Column2 FROM dual) source -- 'USING'是一個子句sql
-ON (target.UniqueColumn = source.Column1) -- 指定用于匹配的列
+USING (SELECT ? AS Column1, ? AS Column2 FROM dual) source  -- 'USING' is a clause in SQL
+ON (target.UniqueColumn = source.Column1) -- Specifies the columns used for matching
 WHEN MATCHED THEN
-    UPDATE SET target.Column2 = source.Column2 -- 如果匹配，則執行更新
+    UPDATE SET target.Column2 = source.Column2 -- If a match is found, perform an update
 WHEN NOT MATCHED THEN
-    INSERT (Column1, Column2) VALUES (source.Column1, source.Column2); -- 如果不匹配，則執行插入
+    INSERT (Column1, Column2) VALUES (source.Column1, source.Column2); -- If no match is found, perform an insert
 ```
