@@ -319,12 +319,12 @@ vim -R [filename]
 
 - Highlight and choose the line
 ```shell
-# Toggle into <visual mode> and V for choose all line, v for single word.
+# Toggle into <visual mode> and press "V" for select whole line, "v" for single word.
 <normal mode> V 
 # Select whole file content.
 <normal mode> gg  # Move to top.
-<normal mode> G  # Move to bottom.
-<normal mode> v  # Switch to <visual mode>.
+<normal mode> v   # Switch to <visual mode>.
+<normal mode> G   # Move to bottom.
 ```
 
 - Copy what you select
@@ -354,7 +354,7 @@ vim -R [filename]
 
 - Search keyword
 ```shell
-# / for search frontward, ? for search backward.
+# "/" for search forward, "?" for search backward.
 # n for next match, N for previous.
 # For escape character search use /api\/vi
 <normal mode> /keyword
