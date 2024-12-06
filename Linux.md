@@ -325,6 +325,8 @@ vim -R [filename]
 <normal mode> gg  # Move to top.
 <normal mode> v   # Switch to <visual mode>.
 <normal mode> G   # Move to bottom.
+<normal mode> y   # Copy select content.
+# Vim need to enable the +clipboard, can check with "vim --version"
 ```
 
 - Copy what you select
