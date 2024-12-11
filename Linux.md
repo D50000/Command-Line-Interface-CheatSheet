@@ -362,6 +362,12 @@ vim -R [filename]
 <normal mode> /keyword
 ```
 
+- Setup hight-light search result
+```shell
+:set hlsearch  # Enable
+:noh           # Disable
+```
+
 - Truncate the log file and save as new file.
 ```shell
 # Search the keyword and save it
