@@ -141,7 +141,7 @@ git diff [lastCommit] [newCommit]
 git diff-tree -r --no-commit-id --name-status --text --diff-filter=ACDMRT [lastCommit] [newCommit] > ./log.diff
 ```
 
-- Remove code from **staged**
+- Discard code from **staged**
 ```
 git reset HEAD -- [path]/[to]/[file]
 ```
@@ -189,10 +189,15 @@ git push -u origin newBranch
 git push --force
 ```
 
-- Revert all change back to last commit
+- Revert all change back to last commit.  
+  `--soft`: Keep both **Staging Area** and **Working Directory** different.  
+  `--mixed`: Delete **Staging Area**, but keep **Working Directory** different.  
+  `--hard`: Delete both **Staging Area** and **Working Directory** different.  
 ```
 git reset HEAD^
-git reset --hard c3befa  # Reset all commit back to commit id. (Not same as detached) 
+git reset --soft <commit-hash>  # Reset all commit back to commit id.
+git reset --hard <commit-hash>  # Reset all commit back to commit id. (Not same as detached) 
+git reset --hard origin/<branch_name>  # Reset commit back to remote origin branch commit. (Discard all local commit)
 ```
 
 - Revert back with specific commit hash
