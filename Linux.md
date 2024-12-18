@@ -295,9 +295,10 @@ tail -100 testfileName
 head -50 testfileName
 ```
 
--  Replace the X with Y in testfilename.txt (space need to escape ```'\ '```)
+-  **Stream Editor** replace the X with Y in testFile.txt and backup old file.  
+(ps: space need to escape ```'\ '``` and `-i`: in-place, `.bak`:backup the file, `s`: substitute, `g`: global replace, `i`: capital case insensitive)
 ```shell
-sed -i 's/XXX/YY\ YY/g' testfilename.txt
+sed -i.bak 's/XXX/YY\ YY/gi' testFile.txt
 ```
 
 -  Read and parse the file and do the custom command.
