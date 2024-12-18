@@ -16,10 +16,9 @@ ssh userName@10.1.3.51
 sudo reboot
 ```
 
-- Print out the text.
+- Show the cpu detail
 ```shell
-echo Hello World
-echo -e  # Print compile the special character.
+cat /proc/cpuinfo
 ```
 
 - Check CentOs/redhat/ubuntu version
@@ -70,6 +69,14 @@ sudo iptables -A INPUT -j ACCEPT # Accept all input link.
 sudo iptables -L INPUT --line-numbers # Show all config with line number.
 sudo iptables -A INPUT -p tcp --dport 7001:7005 -s 192.168.1.100 -j ACCEPT # Accept 192.168.1.100 connect with 7001 ~ 7005 port.
 sudo iptables -D INPUT 5 # Remove line number 5 ip config.
+```
+
+- Firewall check status, add/remove port, restart service.
+```shell
+firewall-cmd --list-all
+firewall-cmd --add-port=[portNumber]/tcp --permanent
+firewall-cmd --remove-port=[portNumber]/tcp  --permanent 
+firewall-cmd --reload
 ```
 
 - List all running processes. (ps: `-e` and `ax` are completely equivalent)
@@ -160,11 +167,6 @@ history
 top
 ```
 
-- Show the cpu detail
-```shell
-cat /proc/cpuinfo
-```
-
 - Check the disk volume the usage
 ```shell
 df -h
@@ -190,14 +192,6 @@ ss -tunapls
 timedatectl status
 cat /etc/ntp.conf  # ntp configuration
 ```
-
-- Firewall check status, add/remove port, restart service.
-```shell
-firewall-cmd --list-all
-firewall-cmd --add-port=[portNumber]/tcp --permanent
-firewall-cmd --remove-port=[portNumber]/tcp  --permanent 
-firewall-cmd --reload
-```
 </details>
 
 ## Download Commands
@@ -222,6 +216,11 @@ curl http://www.google.com > response.html
 - Download files directly.
 ```shell
 wget http://www.google.com/xxx.tar.gz
+```
+
+- Copy the file to other machine.
+```shell
+scp /path/file1 user@192.168.0.1:/path/
 ```
 </details>
 
@@ -260,11 +259,6 @@ usermod -p [password] [username] # -p means "password"
 <details>
 <summary>view subjects</summary>
 
-- Copy the file to other VM
-```shell
-scp /path/file1 user@192.168.0.1:/path/
-```
-
 - Find file name
 ```shell
 find /etc -iname 'KEYWORD'
@@ -273,6 +267,12 @@ find /etc -iname 'KEYWORD'
 - Locate the file path, usually find in 'ENVIRONMENT_VARIABLE $PATH'.
 ```shell
 which [packageName]
+```
+
+- Print out the text.
+```shell
+echo Hello World
+echo -e  # Print compile the special character.
 ```
 
 - Check the content different between two files.
@@ -295,7 +295,7 @@ tail -100 testfileName
 head -50 testfileName
 ```
 
--  Replace the X to Y in testfilename.txt (space need to escape ```'\ '```)
+-  Replace the X with Y in testfilename.txt (space need to escape ```'\ '```)
 ```shell
 sed -i 's/XXX/YY\ YY/g' testfilename.txt
 ```
