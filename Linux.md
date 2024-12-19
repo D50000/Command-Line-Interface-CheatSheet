@@ -301,10 +301,17 @@ head -50 testfileName
 sed -i.bak 's/XXX/YY\ YY/gi' testFile.txt
 ```
 
--  Read and parse the file and do the custom command.
+-  AWK (Alfred Aho, Peter Weinberger, Brian Kernighan):  
+Print, parse and manipulate the file with custom command.
 ```shell
-# Split by ':' and print variables "$1 tab $7"
-cat /etc/passwd | awk -F ':' '{print $1"\t"$7}'
+# Print element_#2 in example.txt file.
+awk '{ print $2 }' example.txt
+
+# Print element_#1 when element_#2 > 25 in example.txt file.
+awk '$2 > 25 { print $0 }' example.txt
+
+# "-F" mean split by ':' and print variables "element_#1" + "tab" + "element_#7"
+awk -F ':' '{print $1"\t"$7}' /etc/passwd
 ```
 </details>
 
