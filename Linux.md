@@ -313,6 +313,16 @@ awk '$2 > 25 { print $0 }' example.txt
 # "-F" mean split by ':' and print variables "element_#1" + "tab" + "element_#7"
 awk -F ':' '{print $1"\t"$7}' /etc/passwd
 ```
+
+- Ping test connect to other host.
+```shell
+ping -V # Show version.
+ping www.google.com # Ping domain.
+ping -c 5 10.1.2.3 # Ping for 5 data count.
+ping -l 10 10.1.2.3 # Ping for 10 size count.
+ping -w 200 10.1.2.3 # Ping for 200ms timeout size count.
+ping -4 10 10.1.2.3 # Ping with IPv4.
+```
 </details>
 
 ## VI & VIM
