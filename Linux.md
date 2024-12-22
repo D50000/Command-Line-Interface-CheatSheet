@@ -314,6 +314,11 @@ awk '$2 > 25 { print $0 }' example.txt
 awk -F ':' '{print $1"\t"$7}' /etc/passwd
 ```
 
+- SNMP (Simple Network Management Protocol) for checking device status by UDP.
+```shell
+snmpget -V # Show version.
+```
+
 - Ping test connect to other host.
 ```shell
 ping -V # Show version.
