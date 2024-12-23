@@ -319,7 +319,7 @@ awk -F ':' '{print $1"\t"$7}' /etc/passwd
 snmpget -V # Show version.
 ```
 
-- Ping test connect to other host.
+- Ping for test connection to other host.
 ```shell
 ping -V # Show version.
 ping www.google.com # Ping domain.
@@ -327,6 +327,16 @@ ping -c 5 10.1.2.3 # Ping for 5 data count.
 ping -l 10 10.1.2.3 # Ping for 10 size count.
 ping -w 200 10.1.2.3 # Ping for 200ms timeout size count.
 ping -4 10 10.1.2.3 # Ping with IPv4.
+```
+
+- Test network to other server by TCP (**port: 23**).
+```shell
+telnet 192.168.1.1 80 # Test hostName with port.
+# Success
+Connected to 192.168.1.1.
+Escape character is '^]'.
+# Fail
+telnet: Unable to connect to remote host: Connection refused
 ```
 </details>
 
