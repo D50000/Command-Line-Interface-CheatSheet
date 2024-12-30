@@ -177,8 +177,15 @@ Detail: [Oracle doc](https://docs.oracle.com/en/database/oracle/sql-developer-we
 
 PS: Oracle Database originally support **SQL** buy no **HQL** (**Hibernate** - Java ORM framework).
 
-- Update data if exist otherwise insert new data.  
-  `MERGE INTO`
+- Select
+
+```sql
+SELECT * FROM employees WHERE name = 'Joe';
+SELECT * FROM employees WHERE name LIKE 'Jo_'; -- Wildcard "single" character match.
+SELECT * FROM employees WHERE name LIKE 'Jo%'; -- Wildcard "multiple" match.
+```
+
+- `MERGE INTO`: Update data if exist otherwise insert new data.
 
 ```sql
 MERGE INTO [tableName] target
