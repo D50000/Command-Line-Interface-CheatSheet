@@ -248,10 +248,10 @@ chgrp groupname testfile.txt
 chmod 755 [testfile.txt]
 ```
 
-- Modify the user's data.
+- Modify the user's advance data.
 ```shell
 usermod -l [newName] [oldUserName] # -l means "login name"
-usermod -p [password] [username] # -p means "password"
+sudo passwd [username] # Update or reset the user login password
 ```
 </details>
 
@@ -317,6 +317,7 @@ awk -F ':' '{print $1"\t"$7}' /etc/passwd
 - SNMP (Simple Network Management Protocol) for checking device status by UDP.
 ```shell
 snmpget -V # Show version.
+// TODO:
 ```
 
 - Ping for test connection to other host.
