@@ -228,7 +228,7 @@ scp /path/file1 user@192.168.0.1:/path/
 <details>
 <summary>view subjects</summary>
 
-- Change to other user.
+- Switch to other user.
 ```shell
 su [userName]
 ```
@@ -248,9 +248,19 @@ chgrp groupname testfile.txt
 chmod 755 [testfile.txt]
 ```
 
-- Modify the user's advance data.
+- Modify the user's login name.
 ```shell
 usermod -l [newName] [oldUserName] # -l means "login name"
+```
+
+- User login password command.
+```shell
+sudo passwd -S [username] # Check user account status. (ps: p: password enable, L: locked, NP: No password setup)
+# user1 P 2025-01-04 0 99999 7 -1 (Password set, user can log in)
+# user1 L 2025-01-04 0 99999 7 -1 (Password locked, user cannot log in)
+# user1 NP 2025-01-04 0 99999 7 -1 (No password set)
+
+sudo passwd -u [username] # Unlock the user account.
 sudo passwd [username] # Update or reset the user login password
 ```
 </details>
