@@ -228,9 +228,11 @@ scp /path/file1 user@192.168.0.1:/path/
 <details>
 <summary>view subjects</summary>
 
-- Switch to other user.
+- Switch user commands.
 ```shell
-su [userName]
+su [userName] # Switch to user with "current state".
+su - [username] # Switch to user and "simulate with it state".
+su [username] -c "[command]" # Use user to execute the command without login.
 ```
 
 - Change owner the file's owner, and file's user group.
