@@ -326,10 +326,11 @@ awk '$2 > 25 { print $0 }' example.txt
 awk -F ':' '{print $1"\t"$7}' /etc/passwd
 ```
 
-- SNMP (Simple Network Management Protocol) for checking device status by UDP.
+- SNMP (Simple Network Management Protocol) for checking device status by UDP protocol using 161 port.
+(ps: SNMP will search from Management Information Base (MIB) to get the object's ID and other device information.)
 ```shell
 snmpget -V # Show version.
-// TODO:
+snmpget -v [snmpVersion] -c [communityString] [targetIp] [ObjectIdentifier] # use specific version and community string (as password) to get OID detail
 ```
 
 - Ping for test connection to other host.
