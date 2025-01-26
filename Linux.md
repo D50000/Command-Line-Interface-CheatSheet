@@ -331,6 +331,10 @@ awk -F ':' '{print $1"\t"$7}' /etc/passwd
 ```shell
 snmpget -V # Show version.
 snmpget -v [snmpVersion] -c [communityString] [targetIp] [ObjectIdentifier] # use specific version and community string (as password) to get OID detail
+
+# Useful Example:
+snmpget -v 2c -c public 192.168.1.1 .1.3.6.1.4.1.2021.11.9.0 # Check the cpu usage OID: .1.3.6.1.4.1.2021.11.9.0（UCD-SNMP-MIB）
+SNMPv2-SMI::enterprises.2021.11.9.0 = INTEGER: 85 # Response usages
 ```
 
 - Ping for test connection to other host.
