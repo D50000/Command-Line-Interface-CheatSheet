@@ -338,6 +338,9 @@ SNMPv2-SMI::enterprises.2021.11.9.0 = INTEGER: 85 # Response usages %.
 
 snmpget -v 2c -c public 192.168.1.1 .1.3.6.1.4.1.2021.4.5.0 # Check the RAM KB usage OID: .1.3.6.1.4.1.2021.4.5.0（UCD-SNMP-MIB）
 SNMPv2-SMI::enterprises.2021.4.5.0 = INTEGER: 8192000 # Response usages KB.
+
+snmpget -v 2c -c public 192.168.1.1 .1.3.6.1.2.1.2.2.1.8.1 # Check the internet connected status OID: .1.3.6.1.2.1.2.2.1.8.<ifIndex>
+IF-MIB::ifOperStatus.1 = INTEGER: 1 # Response usages 1: up, 2: down.
 ```
 
 - Ping for test connection to other host.
