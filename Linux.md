@@ -372,8 +372,12 @@ quit
 <details>
 <summary>view subjects</summary>
 
-- vim/vi file with readonly mode.
+- vim/vi file with readonly mode.(Visual Editor (**vi**), Vi IMproved (**vim**))
 ```shell
+# Check version.
+vi --version
+vim --version
+
 # It will pop up error it modify the file.
 vim -R [filename]
 ```
