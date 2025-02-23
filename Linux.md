@@ -295,6 +295,8 @@ diff fileName1 fileName2
 - Live checking the log file in latest line.
 ```shell
 tail -f fileName
+# Tail the file and grep data. (ps: grep -E = egrep)
+tail -f fileName | grep -E 'AAA|BBB' # Use regular expression for "or" search.
 ```
 
 -  Show the last 100 lines.
