@@ -6,6 +6,7 @@ https://git-scm.com/docs
 ```
 git clone <url> // Generic clone.
 git clone https://$userAccount@github.com/xxxxxx/xxxxxxx.git  // Use $userAccount to clone the git file.
+git clone --mirror https://github.com/D50000/xxxxxxx.git // Fully clone with detail repository, branches, tags, reference. 
 ```
 
 - Pull the source down and replace the local source **(pull = fetch + merge)**
@@ -180,6 +181,9 @@ git log --author="xxx user" # Show the xxx user commit.
 git push <repository> <refspec>
 # example
 git push origin HEAD:refs/for/master
+# Push complete repository detail into new remote repository.
+git push --mirror
+
 # Create a new branch 'newBranch' at upstream and push/refs it from local.
 # ex1
 git push --set-upstream origin newBranch 
