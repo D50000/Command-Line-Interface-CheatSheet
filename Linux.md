@@ -235,6 +235,11 @@ su - [username] # Switch to user and "simulate with it state".
 su [username] -c "[command]" # Use user to execute the command without login.
 ```
 
+- Exit current connect session.
+```shell
+exit
+```
+
 - Change owner the file's owner, and file's user group.
 ```shell
 chown root:root /var/log/file
