@@ -30,15 +30,18 @@ git merge newBranch
 git merge --abort
 ```
 
-- Switch to branch 'branch01' or 'commitId'
+- Switch to others branch 'branch01' or 'commitId'
 ```
 git checkout branch01
 git checkout 8955e93
 ```
 
-- Create and switch to new branch 'new_b'
+- Create new branches
 ```
+# Create and switch to new branch 'new_b'
 git checkout -b new_b
+# Just create new branch 'rescue-before-undo'
+git branch rescue-before-undo
 ```
 
 - Rename the branch name
@@ -240,7 +243,7 @@ git stash drop
 ```
 git stash clear
 ```
-  
+
 - Cherry-pick: Merge a commit '99daed2' from other branch to master branch.
   It also can pick the commit from the current branch to the top commit. ([Detail](https://backlog.com/git-tutorial/tw/stepup/stepup7_4.html))
 ```
