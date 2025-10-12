@@ -220,7 +220,8 @@ wget http://www.google.com/xxx.tar.gz
 
 - Copy the file to other machine.
 ```shell
-scp /path/file1 user@192.168.0.1:/path/
+scp /path/file1 user@192.168.0.1:/path/ # Copy the file to another server path.
+scp -r -P 2222 /path/folder user@192.168.0.1:/path/ # Copy a directory from another server path and transfer by port config.
 ```
 </details>
 
