@@ -244,6 +244,12 @@ git stash drop
 git stash clear
 ```
 
+- Backup git log temporary.
+# If git object haven't GC, it can get back to any comments, branches and CLI history.
+```
+git reflog
+```
+
 - Cherry-pick: Merge a commit '99daed2' from other branch to master branch.
   It also can pick the commit from the current branch to the top commit. ([Detail](https://backlog.com/git-tutorial/tw/stepup/stepup7_4.html))
 ```
