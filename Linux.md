@@ -282,6 +282,12 @@ sudo passwd [username] # Update or reset the user login password
 find /etc -iname 'KEYWORD'
 ```
 
+- Wildcard syntax.
+```shell
+ls /*.txt    # List the /x.txt files.
+ls **/*.txt  # Recursively list out the all level directories x.txt files. 
+```
+
 - Locate the file path, usually find in 'ENVIRONMENT_VARIABLE $PATH'.
 ```shell
 which [packageName]
