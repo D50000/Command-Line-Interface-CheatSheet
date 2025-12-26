@@ -223,6 +223,13 @@ wget http://www.google.com/xxx.tar.gz
 scp /path/file1 user@192.168.0.1:/path/ # Copy the file to another server path.
 scp -r -P 2222 /path/folder user@192.168.0.1:/path/ # Copy a directory from another server path and transfer by port config.
 ```
+
+- Copy and transfer diff files source to target.  
+(ps: `-a` - archive mode to keep the permission, `-v` - verbose detail log, `-z` - compress transfer, `-P` - show progress)
+```shell
+rsync -avzP source/aaa/ target/bbb/
+rsync -avzP ./ apuser@11.22.33.44:/etc/bbb/
+```
 </details>
 
 ## Permission
