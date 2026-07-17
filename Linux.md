@@ -92,21 +92,14 @@ lsof -p PID   # List Open Files command.
 ss -pl | grep PID   # Socket Statistics command.
 ```
 
-TODO:
-# 1. 顯示人類易讀的時間戳記 (預設顯示開機後的秒數)
-dmesg -T
-
-# 2. 即時監控新產生的核心日誌 (類似 tail -f)
-dmesg -w
-
-# 3. 依據核心設施群組 (Facility) 與日誌等級 (Level) 篩選
-dmesg -k              # 僅顯示核心 (kernel) 訊息
-dmesg -l err,warn     # 僅顯示錯誤 (error) 與警告 (warning) 訊息
-
-# 4. 常見組合：結合 grep 篩選特定硬體或關鍵字 (-i 忽略大小寫)
-dmesg | grep -i usb   # 檢查 USB 裝置連接狀態
-dmesg | grep -i nvme  # 檢查 NVMe 固態硬碟狀態
-dmesg | grep -i oom   # 檢查是否有程序因記憶體不足 (Out Of Memory) 被殺掉
+- System Display message
+```shell
+dmesg -T # Display kernel ring buffer with human-readable timestamps.
+dmesg -w # Follow kernel logs in real-time (similar to tail -f).
+dmesg -k # Filter logs by Kernel space logs only.
+dmesg -l err,warn # Filter logs by Log level filtering.
+dmesg | grep -i oom  # Check Out-Of-Memory killed processes.
+```
 
 - Run the process in background / foreground (**Kill** when ssh disconnect)
 ```shell
